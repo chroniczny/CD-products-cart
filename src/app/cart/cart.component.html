@@ -1,0 +1,15 @@
+<table class="products-items">
+  <tbody>
+  <tr  class="products-item-row">
+    <app-cart-item [item]="header" [icon]="''"></app-cart-item>
+  </tr>
+  </tbody>
+  <tbody>
+  <tr *ngFor="let item of cartItemList" class="products-item-row">
+    <app-cart-item [item]="item" [icon]="'close'"></app-cart-item>
+  </tr>
+  </tbody>
+</table>
+<div class="products-item-summary">
+  Total <span>{{total}} PLN</span>
+</div>

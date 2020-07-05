@@ -1,0 +1,24 @@
+.products-items {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  tbody, th, th tbody {
+    width: 100%;
+    .products-item-row {
+      width: 100%;
+    }
+  }
+}
+
+.products-item-summary {
+  margin-right: 8px;
+  padding: 20px 30px;
+  text-align: end;
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .2);
+  background: rgba(255, 255, 255, 0.8);
+}

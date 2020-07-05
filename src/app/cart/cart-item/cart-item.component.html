@@ -1,0 +1,14 @@
+<td class="cart-item-cell cart-item-img">
+  <img *ngIf="item.product.cover" [src]="item.product.cover">
+</td>
+<td class="cart-item-cell">{{item.product.title}}</td>
+<td class="cart-item-cell">{{item.quantity}}</td>
+<td class="cart-item-cell">{{item.product.price}}</td>
+<td class="cart-item-cell">
+  <span>{{getItemAmount(item)}}</span>
+</td>
+<td class="cart-item-cell">
+  <div *ngIf="icon"
+          class="close-icon"
+          (click)="removeGroupOfItems(item.product.id)"></div>
+</td>

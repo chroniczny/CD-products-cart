@@ -1,0 +1,44 @@
+:host {
+  width: 100%;
+  display: table;
+  margin-bottom: 1rem;
+
+  .cart-item-img {
+    img {
+      width: 40px;
+      height: auto;
+    }
+  }
+
+  td.cart-item-cell {
+    background: #FFFFFF;
+    padding: .5rem;
+    width: 19%;
+    text-align: right;
+    vertical-align: bottom;
+
+    &.cart-item-img {
+      text-align: center;
+      img {
+        width: 40px;
+        height: auto;
+      }
+    }
+
+    &:last-child {
+      width: 5%;
+      vertical-align: top;
+      .close-icon {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+        background: url("../../../assets/img/close-24px.svg") center no-repeat;
+        background-size: cover;
+        &:hover {
+          background: url("../../../assets/img/close-red.svg") center no-repeat;
+        }
+      }
+    }
+  }
+}
+
