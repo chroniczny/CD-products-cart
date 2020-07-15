@@ -1,0 +1,41 @@
+:host {
+  width: 100%;
+  min-height: 100vh;
+
+  .board-top-bar {
+    padding: 20px 40px 10px;
+    color: #778899;
+  }
+
+  .board-content {
+    min-height: calc(100vh - 96px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+
+    .board-section-left {
+      padding: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      height: auto;
+      flex-wrap: wrap;
+    }
+
+    .board-section-right {
+      width: 40%;
+      padding: 40px 40px 70px;
+      background: #c9d7e3;
+    }
+  }
+
+  @media (max-width: 778px) {
+    .board-content {
+      flex-wrap: wrap;
+      .board-section-left, .board-section-right {
+        width: 100%;
+      }
+    }
+  }
+}

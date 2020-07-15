@@ -1,0 +1,6 @@
+<div class="product">
+  <img [src]="product.cover" class="product-cover">
+  <div class="product-title">{{product.title}}</div>
+  <div class="product-price">{{product.price}}<span>&nbsp;PLN</span></div>
+  <button class="product-btn" (click)="addToCard(product)">Add to cart</button>
+</div>
